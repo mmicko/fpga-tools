@@ -1,1 +1,1 @@
-docker run --user `id -u`:`id -g` --privileged -it --rm -v $(pwd):/work mmicko/fpga-tools:1.0 ${0##*/} "$@"
+docker run --user `id -u`:`id -g` --privileged -it --rm -v /:/work -w /work/$(pwd) mmicko/fpga-tools:1.0 ${0##*/} "$@"
