@@ -8,22 +8,22 @@ help:
 install: all
 	mkdir -p $(PREFIX)/bin
 	cp bin/fpga-wrapper $(PREFIX)/bin/fpga-wrapper
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/icebram
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/icemulti
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/icepack
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/icepll
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/iceprog
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/icetime
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/iceunpack
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/arachne-pnr
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/nextpnr-ice40
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/yosys
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/yosys-abc
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/yosys-config
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/yosys-filterlib
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/yosys-smtbmc
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/iverilog
-	ln -s $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/vvp
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/icebram
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/icemulti
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/icepack
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/icepll
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/iceprog
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/icetime
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/iceunpack
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/arachne-pnr
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/nextpnr-ice40
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/yosys
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/yosys-abc
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/yosys-config
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/yosys-filterlib
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/yosys-smtbmc
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/iverilog
+	ln -sf $(PREFIX)/bin/fpga-wrapper $(PREFIX)/bin/vvp
 
 uninstall:
 	rm -f $(PREFIX)/bin/fpga-wrapper
